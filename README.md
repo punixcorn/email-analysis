@@ -1,9 +1,24 @@
 # EMAIL VERIFIER
-
-used typescript because meh
+Typescript because meh
 
 ### NB demo application
 
+# build 
+- clone
+```
+git clone https://github.com/punixcorn/email-verifier
+```
+- build  & run
+```
+cd email-verifier
+npm install
+npm run dev
+```
+- before running, fill in the api's in `.env`
+```
+GEMINI_API_KEY=....
+API_KEY=... ( this is for ipqualityscore.com) :w
+```
 # Usage
 
 i don't know how you'd use it honestly
