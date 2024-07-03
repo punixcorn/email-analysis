@@ -1,12 +1,12 @@
 /*
- * one of my out of the pocket codes ever
- * Email verification
- * I dunno how but it works when it works
- * I don't know what the structure of this code is
- * getting Email's through google's api sucks
- * You need to go spwan a google cloud instance
+ * one of my out of the pocket codes ever.
+ * Email verification. punixcorn@2024
+ * I dunno how... but it works when it works,
+ * I don't know what the structure of this code is...
+ * Getting Email's through google's api sucks.
+ * You need to go spwan a google cloud instance,
  * web scrapping too sucks
- * so this isn't for public use
+ * So this isn't for public use
  * remove line 254 - 257 to use the demo email to test this app
  * I added a demo mode --demo / -d no need to edit the lines
  */
@@ -50,7 +50,7 @@ class EmailAnalyzer {
         return words.filter((word: string) => !dictionary.find((dicIndex) => dicIndex === word)).length;
     };
 
-    /* null = error, -1 = error */
+    /*print a full report on the Email*/
     public analyzeEmail = async (email?: Email): Promise<Results> | null => {
         if (email === undefined || email === null) {
             return null;
@@ -101,7 +101,7 @@ class EmailAnalyzer {
         return results;
     };
 
-    /* nothing */
+    /* verify Sender using and API */
     public verifySender = async (email: Email): Promise<boolean | null> => {
         if (this.API === undefined || this.API === '') {
             console.log(`API key not defined`);
@@ -142,6 +142,7 @@ class EmailAnalyzer {
         return ret;
     };
 
+    /* same as analyzeSubject but for body */
     public analyzeBody = (email: Email): Analysis => {
         let ret: Analysis = {
             messages: [''],
@@ -166,7 +167,7 @@ class EmailAnalyzer {
         return ret;
     };
 
-    //use GEMINI AI to check the email and render md output to terminal
+    /* use GEMINI AI to check the email and render md output to terminal */
     public useAi = async (email: Email): Promise<void> => {
         if (email === null || email?.body === null || email?.subject === null) {
             return null;
