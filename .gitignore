@@ -1,0 +1,6 @@
+node_modules/
+eslint.config.mjs
+dist/
+./src/email.txt
+.env
+
