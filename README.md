@@ -1,12 +1,15 @@
 # EMAIL ANALYSIS TOOL
 Typescript because meh
 
+
+
 ### [ NOTE: demo application ]
-The goal of this application was to use your **gmail api** </br>
-fetch the gmail -> read the gmail ->  analyze and ouput </br>
-but according [Google's API Biling](https://support.google.com/googleapi/answer/6158867?hl=en&ref_topic=7013279&sjid=17315915535892950383-EU) its not free, even free ones are limited to a certain usage </br>
-hence this is scrapped, i could use another email service, but i don't use them. </br>
-hence this is a demo application.
+> [!WARNING]
+> The goal of this application was to use your **gmail api**. </br>
+> Process : Fetch the gmail -> Read the gmail ->  Analyze and ouput </br>
+> But based on [Google's API Biling](https://support.google.com/googleapi/answer/6158867?hl=en&ref_topic=7013279&sjid=17315915535892950383-EU), its not free, so called free ones are limited to a certain usage </br>
+> Hence this is scrapped, i could use another email service, but i don't use them. </br>
+> hence this is a demo application.
 
 # build 
 - clone
